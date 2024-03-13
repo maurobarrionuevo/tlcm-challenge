@@ -34,7 +34,7 @@ git clone https://github.com/maurobarrionuevo/tlcm-challenge.git
 2. Navigate into the project directory:
 
 ```bash
-cd weather-app
+cd tlcm-challenge
 ```
 
 3. Install dependencies:
