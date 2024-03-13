@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import WeatherModule from "../WeatherModule"
 import { loader } from '../../maps/config'
-import { useContext, useEffect, useRef } from 'react'
+import { useCallback, useContext, useEffect, useRef } from 'react'
 import { AppContext } from '../../context/AppContext'
 import { getCurrentPrecipitationsMap } from '../../api/weather'
 
@@ -9,7 +9,7 @@ const RainForecast = () => {
     const mapRef = useRef(null)
     const { selectedLocation } = useContext(AppContext)
 
-    const loadMaps = async (): Promise<void> => {
+    const loadMaps = useCallback(async (): Promise<void> => {
         try {
             console.log(loader)
             const position = { lat: selectedLocation?.lat, lng: selectedLocation?.lon }
@@ -26,7 +26,7 @@ const RainForecast = () => {
         } catch (error) {
             console.log('Error', error)
         }
-    }
+    }, [selectedLocation?.lat, selectedLocation?.lon])
 
     const forecastMap = async () => {
         const map = await getCurrentPrecipitationsMap()
@@ -35,10 +35,14 @@ const RainForecast = () => {
     }
 
     useEffect(() => {
+        loadMaps()
+    }, [loadMaps, selectedLocation])
+
+    useEffect(() => {
         if (loader) {
             loadMaps()
         }
-    }, [])
+    }, [loadMaps])
 
     return (
         <WeatherModule className="rain-forecast" label={'Rain (Overlay not implemented yet)'}>
