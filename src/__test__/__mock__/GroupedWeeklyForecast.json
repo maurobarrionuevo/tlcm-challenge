@@ -1,0 +1,78 @@
+{
+  "minTemp": 22.44,
+  "maxTemp": 27.19,
+  "days": [
+    {
+      "date": "2024-03-13",
+      "dayOfWeek": "Tue",
+      "maxTemp": 24.88,
+      "minTemp": 22.44,
+      "mostProminentWeather": {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04d"
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "dayOfWeek": "Wed",
+      "maxTemp": 25.41,
+      "minTemp": 23.56,
+      "mostProminentWeather": {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    },
+    {
+      "date": "2024-03-15",
+      "dayOfWeek": "Thu",
+      "maxTemp": 25.54,
+      "minTemp": 23.62,
+      "mostProminentWeather": {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    },
+    {
+      "date": "2024-03-16",
+      "dayOfWeek": "Fri",
+      "maxTemp": 26.43,
+      "minTemp": 23.93,
+      "mostProminentWeather": {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    },
+    {
+      "date": "2024-03-17",
+      "dayOfWeek": "Sat",
+      "maxTemp": 27.19,
+      "minTemp": 24.48,
+      "mostProminentWeather": {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04n"
+      }
+    },
+    {
+      "date": "2024-03-18",
+      "dayOfWeek": "Sun",
+      "maxTemp": 25.89,
+      "minTemp": 25.52,
+      "mostProminentWeather": {
+        "id": 801,
+        "main": "Clouds",
+        "description": "few clouds",
+        "icon": "02n"
+      }
+    }
+  ]
+}

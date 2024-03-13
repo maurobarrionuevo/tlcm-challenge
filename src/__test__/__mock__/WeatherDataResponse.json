@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": -80.1936,
+        "lat": 25.7742
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 22.05,
+        "feels_like": 22.24,
+        "temp_min": 20.56,
+        "temp_max": 23.34,
+        "pressure": 1019,
+        "humidity": 74
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.09,
+        "deg": 100
+    },
+    "clouds": {
+        "all": 0
+    },
+    "dt": 1710299021,
+    "sys": {
+        "type": 2,
+        "id": 2009435,
+        "country": "US",
+        "sunrise": 1710243161,
+        "sunset": 1710286094
+    },
+    "timezone": -14400,
+    "id": 4164138,
+    "name": "Miami",
+    "cod": 200
+}
