@@ -13,12 +13,13 @@ export type LocationItemProps = {
 
 const LocationItem = ({ data, handleClick, selected }: LocationItemProps) => {
     const { name, country, state } = data
-    const { addedLocations, setAddedLocations, setSelectedLocation } = useContext(AppContext)
+    const { addedLocations, setAddedLocations, selectedLocation, setSelectedLocation } =
+        useContext(AppContext)
 
     const removeLocation = () => {
         const filtered = addedLocations.filter(location => location.name !== data.name)
         setAddedLocations(filtered)
-        if (addedLocations.length > 0) {
+        if (addedLocations.length > 0 && selectedLocation?.name === data.name) {
             setSelectedLocation(addedLocations[0])
         }
     }
