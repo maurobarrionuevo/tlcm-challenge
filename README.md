@@ -57,7 +57,7 @@ The application runs unit tests using GitHub Actions during the build process.
 
 To run the unit tests locally, use the following command:
 
-![Passed tests](/public/tests.png)
+![Passed tests](/public/test.png)
 
 ```bash
 npm run test
