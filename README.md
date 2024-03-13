@@ -55,16 +55,8 @@ npm run dev
 
 To run the unit tests locally, use the following command:
 
-![Passed tests](/public/test.png)
-
 ```bash
 npm run test
 ```
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit any issues or pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+![Passed tests](/public/test.png)
