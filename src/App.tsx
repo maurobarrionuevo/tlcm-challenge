@@ -7,6 +7,7 @@ import { useContext, useEffect } from 'react'
 import { getAddedLocationsFromStorage, updateSelectedLocationToStorage } from './helpers/helpers'
 import { AppContext } from './context/AppContext'
 import theme from './styles/theme'
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <AppRouter />
+            <Analytics />
         </ThemeProvider>
     )
 }
