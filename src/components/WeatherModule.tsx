@@ -6,24 +6,23 @@ import { ReactNode } from 'react'
 import '../assets/icons/library'
 
 type Props = {
-    icon?: IconName,
-    label: string,
-    children?: ReactNode,
+    icon?: IconName
+    label: string
+    children?: ReactNode
     className?: string
+    padding?: boolean
 }
 
-const WeatherModule = ({icon, label, children, className}: Props) => {
-  return (
-    <WeatherModuleStyled className={className}>
-        <div className="header">
-            {icon && <FontAwesomeIcon className="icon" icon={icon}/>}
-            {label}
-        </div>
-        <div className="component">
-            {children}
-        </div>
-    </WeatherModuleStyled>
-  )
+const WeatherModule = ({ icon, label, children, className, padding = true }: Props) => {
+    return (
+        <WeatherModuleStyled className={className} padding={padding}>
+            <div className="header">
+                {icon && <FontAwesomeIcon className="icon" icon={icon} />}
+                {label}
+            </div>
+            <div className="component">{children}</div>
+        </WeatherModuleStyled>
+    )
 }
 
 export default WeatherModule
