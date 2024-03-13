@@ -21,9 +21,12 @@ export default IconButton
 
 const IconButtonStyled = styled.button`
     background: none;
-    border:none;
+    border: none;
     cursor: pointer;
-    .icon{
-        color:white;
+    .icon {
+        color: white;
+        &:hover {
+            color: darkgray;
+        }
     }
 `
