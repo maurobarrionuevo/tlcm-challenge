@@ -5,14 +5,12 @@ import WeatherModule from "../WeatherModule"
 
 const RainForecast = () => {
   return (
-    <WeatherModule className="rain-forecast" label={"Partly conditions from 06:00 to 09:00"}>
-        <RainForecastStyled>
-            <div className="hola">
-                hola
-            </div>
-        </RainForecastStyled>
+    <WeatherModule className="rain-forecast" label={"Rain forecast"}>
+      <RainForecastStyled>
+        <div className="hola">hola</div>
+      </RainForecastStyled>
     </WeatherModule>
-  )
+  );
 }
 
 export default RainForecast

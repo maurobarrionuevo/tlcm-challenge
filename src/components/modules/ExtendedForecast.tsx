@@ -9,18 +9,21 @@ type Props = {
 
 const ExtendedForecast = ({weeklyForecast}: Props) => {
     return (
-        <WeatherModule className="extended-forecast" label={"Partly conditions from 06:00 to 09:00."}>
-            <ExtendedForecastStyled>
-                {
-                    weeklyForecast.days.map((day) => {
-                        return(
-                            <DailyTemps key={day.dayOfWeek} day={day} max={weeklyForecast.maxTemp} min={weeklyForecast.minTemp}/>
-                        )
-                    })
-                }
-            </ExtendedForecastStyled>
-        </WeatherModule>
-    )
+      <WeatherModule className="extended-forecast" label={"Daily forecast"}>
+        <ExtendedForecastStyled>
+          {weeklyForecast.days.map((day) => {
+            return (
+              <DailyTemps
+                key={day.dayOfWeek}
+                day={day}
+                max={weeklyForecast.maxTemp}
+                min={weeklyForecast.minTemp}
+              />
+            );
+          })}
+        </ExtendedForecastStyled>
+      </WeatherModule>
+    );
 }
 
 export default ExtendedForecast

@@ -37,6 +37,12 @@ const LocationSelector = () => {
     };
 
     useEffect(() => {
+      if (search === "") {
+        setResults(undefined);
+      }
+    }, [search]);
+
+    useEffect(() => {
         setSearching(true)
         const debounceTimer = setTimeout(async () => {
             try {

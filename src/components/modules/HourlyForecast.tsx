@@ -9,18 +9,14 @@ type Props = {
 
 const HourlyForecast = ({forecast}: Props) => {
     return (
-        <WeatherModule className="hourly-forecast" label={"Partly conditions from 06:00 to 09:00, with mostly cloudy conditions"}>
-            <HourlyForecastStyled>
-                {
-                    forecast.map((day: DailyForecast) => {
-                        return(
-                            <HourlyTemp key={day.dt} day={day}/>
-                        )
-                    })
-                }
-            </HourlyForecastStyled>
-        </WeatherModule>
-    )
+      <WeatherModule className="hourly-forecast" label={"Forecast by hour"}>
+        <HourlyForecastStyled>
+          {forecast.map((day: DailyForecast) => {
+            return <HourlyTemp key={day.dt} day={day} />;
+          })}
+        </HourlyForecastStyled>
+      </WeatherModule>
+    );
 }
 
 export default HourlyForecast

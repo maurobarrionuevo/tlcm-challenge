@@ -46,7 +46,6 @@ describe("getCurrentWeather", () => {
 
 describe("getForecast", () => {
   it("Fetches forecast correctly", async () => {
-    // Mocking the resolved value directly
     WeatherApi.get = jest.fn().mockResolvedValue({ data: ForecastResponse });
 
     const lat = 40.7128;
