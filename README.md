@@ -2,6 +2,8 @@
 
 This is a weather application built with React, TypeScript, and Vite. It allows users to check the weather for multiple locations, search for locations, and retrieve weather data including current weather, hourly forecast, and daily forecast. Additionally, it determines the user's current location using the browser's geolocation API and maintains added locations and selected location in local storage.
 
+![Weather App Preview](/public/preview.png)
+
 ## Features
 
 - List multiple locations
@@ -54,6 +56,8 @@ npm run dev
 The application runs unit tests using GitHub Actions during the build process.
 
 To run the unit tests locally, use the following command:
+
+![Passed tests](/public/tests.png)
 
 ```bash
 npm run test
