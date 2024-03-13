@@ -28,7 +28,7 @@ The application is deployed on Vercel and can be accessed at [https://tlcm-chall
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/maurobarrionuevo/tlcm-challenge.git
 ```
 
 2. Navigate into the project directory:
